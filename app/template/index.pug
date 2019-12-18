@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        // Required meta tags
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        // FONTS
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap&subset=cyrillic', rel='stylesheet')
+        // CSS
+        link(rel="stylesheet" href="css/style.min.css")
+    body
+        
+        main.main
+          .block
+            .block-tab
+              a.tab.active-tab Лэндинг
+              a.tab Многостраничник
+            .block-blocks
+              span.block-text Количество блоков
+              input.input
+            .block-hours
+              span.block-text Сколько часов на проект
+              input.input
+            .block-count
+              span.block-text Стоимость вашего часа
+              input.input
+            h5.block-smallTitle Дополнительно
+            .block-serv
+              input.block-checkbox(id="one" type="checkbox")
+              label(for="one") Возможность редактировать текст на сайте
+            .block-serv
+              input.block-checkbox(id="two" type="checkbox")
+              label(for="two") Установка на CMS
+            .block-price
+              h1.block-price__title Общая стоимость
+              input.block-price__count(type="text")
+
+        //SCRIPT
+        script(src="js/script.js")
