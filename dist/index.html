@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-	<span>I am rich!</span>
-</body>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <main class="main">
+      <div class="block">
+        <div class="block-tab"><a class="tab active-tab" id="land">Лэндинг</a><a class="tab" id="corp">Многостраничник</a></div>
+        <div class="block-page">
+          <div class="block-blocks"><span class="block-text">Количество блоков</span>
+            <input class="input" id="calc-blocks" type="number">
+          </div>
+          <div class="block-pages"><span class="block-text">Количество страниц </span>
+            <input class="input" id="calc-pages" type="number">
+          </div>
+          <div class="block-hours"><span class="block-text">Сколько часов на проект</span>
+            <input class="input" id="calc-hours" type="number">
+          </div>
+          <div class="block-count"><span class="block-text">Стоимость вашего часа</span>
+            <input class="input" id="calc-rate" type="number">
+          </div>
+          <h5 class="block-smallTitle">Дополнительно</h5>
+          <div class="block-serv">
+            <input class="block-checkbox" id="admin" type="checkbox">
+            <label for="admin">Возможность редактировать текст на сайте</label>
+          </div>
+          <div class="block-serv">
+            <input class="block-checkbox" id="cms" type="checkbox">
+            <label for="cms">Установка на CMS</label>
+          </div>
+          <div class="block-price">
+            <h1 class="block-price__title">Общая стоимость</h1>
+            <input class="block-price__count" id="price" type="text" value="5000">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--SCRIPT-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
